@@ -1,9 +1,9 @@
 uniform sampler2D texture;
 
-varying vec2 v_tex_coords;
+varying vec2 v_uv;
 
 void main() {
-    gl_FragColor = texture2D(texture, v_tex_coords);
+    gl_FragColor = texture2D(texture, v_uv);
 }
 
 // vim: set tabstop=4 shiftwidth=4 softtabstop=4 expandtab:
